@@ -8,6 +8,7 @@ I use optimization, forecasting and machine learning to make operations cheaper,
 
 | Project | What it does | Highlights |
 |---|---|---|
+| [**Demand Forecasting → Inventory Policy**](https://github.com/iabdullah42/demand-forecasting-inventory) | Daily demand forecasts (Prophet, LightGBM, ensemble) turned into a safety-stock policy, simulated day by day, with a Streamlit dashboard | **−24% forecast error** vs best baseline; **99.0% vs 93.1% fill rate** at about the same inventory, 77% fewer stockout days · Prophet, LightGBM, Streamlit, pytest |
 | [**NJ Last-Mile Route Optimization**](https://github.com/iabdullah42/nj-last-mile-route-optimization) | Capacitated vehicle routing for a Central NJ delivery station: nearest-neighbor dispatch vs the Clarke-Wright heuristic vs an exact MILP | **−29.8% miles, −20.6% daily cost**; heuristic proven within 0.5% of optimal · SciPy (HiGHS), pytest |
 
 ## 🤖 Machine Learning & AI
@@ -31,7 +32,7 @@ I use optimization, forecasting and machine learning to make operations cheaper,
 
 ## 🧰 Toolkit
 
-**Python** (pandas, NumPy, SciPy, scikit-learn, TensorFlow, matplotlib) · **Optimization** (MILP, heuristics) · **SQL** · **Power BI**, Excel, Tableau · **Lean Six Sigma**, DMAIC, value stream mapping · WMS / ERP (Infor M3)
+**Python** (pandas, NumPy, SciPy, scikit-learn, TensorFlow, matplotlib) · **Forecasting** (Prophet, LightGBM) · **Inventory policy** (safety stock, simulation) · **Optimization** (MILP, heuristics) · **SQL** · **Power BI**, Excel, Tableau · **Lean Six Sigma**, DMAIC, value stream mapping · WMS / ERP (Infor M3)
 
 ## 🧭 Background
 
