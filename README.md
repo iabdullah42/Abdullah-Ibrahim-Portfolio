@@ -8,6 +8,7 @@ I use optimization, forecasting and machine learning to make operations cheaper,
 
 | Project | What it does | Highlights |
 |---|---|---|
+| [**Supply Chain Copilot**](https://github.com/iabdullah42/supply-chain-copilot) | Claude API tool-use agent that answers procurement questions in plain English by writing SQL against a read-only SQLite database of 2,400 POs, with guardrails, an eval suite and a Streamlit chat | Analyst rules in the prompt took evals from **5/6 to 6/6**; it compares carriers within supplier and lane instead of blaming them for supplier mix · Anthropic API, SQL, Streamlit, pytest |
 | [**Warehouse Labor Simulation**](https://github.com/iabdullah42/warehouse-labor-simulation) | Engineered pick/pack labor standards → spreadsheet labor plan → SimPy discrete-event simulation of a DC shift with truck cutoffs, staffing search and stress tests, plus a Streamlit dashboard | Cutoff sequencing made **100% of trucks with the planned 18-person crew**; FIFO missed ~7% even with +22% labor · SimPy, Streamlit, pytest |
 | [**Demand Forecasting → Inventory Policy**](https://github.com/iabdullah42/demand-forecasting-inventory) | Daily demand forecasts (Prophet, LightGBM, ensemble) turned into a safety-stock policy, simulated day by day, with a Streamlit dashboard | **−24% forecast error** vs best baseline; **99.0% vs 93.1% fill rate** at about the same inventory, 77% fewer stockout days · Prophet, LightGBM, Streamlit, pytest |
 | [**NJ Last-Mile Route Optimization**](https://github.com/iabdullah42/nj-last-mile-route-optimization) | Capacitated vehicle routing for a Central NJ delivery station: nearest-neighbor dispatch vs the Clarke-Wright heuristic vs an exact MILP | **−29.8% miles, −20.6% daily cost**; heuristic proven within 0.5% of optimal · SciPy (HiGHS), pytest |
@@ -33,7 +34,7 @@ I use optimization, forecasting and machine learning to make operations cheaper,
 
 ## 🧰 Toolkit
 
-**Python** (pandas, NumPy, SciPy, scikit-learn, TensorFlow, matplotlib) · **Forecasting** (Prophet, LightGBM) · **Inventory policy** (safety stock, simulation) · **Simulation** (SimPy, labor standards) · **Optimization** (MILP, heuristics) · **SQL** · **Power BI**, Excel, Tableau · **Lean Six Sigma**, DMAIC, value stream mapping · WMS / ERP (Infor M3)
+**Python** (pandas, NumPy, SciPy, scikit-learn, TensorFlow, matplotlib) · **Forecasting** (Prophet, LightGBM) · **Inventory policy** (safety stock, simulation) · **Simulation** (SimPy, labor standards) · **Optimization** (MILP, heuristics) · **LLM agents** (Claude API tool use, evals, guardrails) · **SQL** · **Power BI**, Excel, Tableau · **Lean Six Sigma**, DMAIC, value stream mapping · WMS / ERP (Infor M3)
 
 ## 🧭 Background
 
